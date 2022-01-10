@@ -133,7 +133,7 @@
                 </ui:CursorPosition>
               </ui:Click.CursorPosition>
               <ui:Click.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="269ababf-e5a1-432b-9557-75702514fab3" InformativeScreenshot="acb66df5ee988e6a11c96e0734a05573" Selector="&lt;webctrl aaname='15 following' tag='A' /&gt;">
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="269ababf-e5a1-432b-9557-75702514fab3" InformativeScreenshot="acb66df5ee988e6a11c96e0734a05573" Selector="&lt;webctrl aaname='* following' tag='A' /&gt;">
                   <ui:Target.TimeoutMS>
                     <InArgument x:TypeArguments="x:Int32" />
                   </ui:Target.TimeoutMS>
@@ -253,12 +253,12 @@
     </Sequence>
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="488,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="RemoveFollowing.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <InArgument x:TypeArguments="sd:DataTable" x:Key="followersDataTable">
-          <mva:VisualBasicValue x:TypeArguments="sd:DataTable" ExpressionText="FollowersDataTable" />
-        </InArgument>
-        <InArgument x:TypeArguments="sd:DataTable" x:Key="followingDataTable">
-          <mva:VisualBasicValue x:TypeArguments="sd:DataTable" ExpressionText="followingDataTable" />
-        </InArgument>
+        <InOutArgument x:TypeArguments="sd:DataTable" x:Key="followersDataTable">
+          <mva:VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="FollowersDataTable" />
+        </InOutArgument>
+        <InOutArgument x:TypeArguments="sd:DataTable" x:Key="followingDataTable">
+          <mva:VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="followingDataTable" />
+        </InOutArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
   </Sequence>
