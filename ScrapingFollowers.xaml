@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1318,2772</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1515,2772</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Scraping_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="66">
@@ -84,7 +84,11 @@
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="Scraping" sap:VirtualizedContainerService.HintSize="1199,2707" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:String" Default="https://www.instagram.com/" Name="instagram_url" />
+      <Variable x:TypeArguments="x:String" Name="instagram_url">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">https://www.instagram.com/</Literal>
+        </Variable.Default>
+      </Variable>
       <Variable x:TypeArguments="sd:DataTable" Name="FollowersDataTable" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
@@ -341,9 +345,7 @@
     </ui:Click>
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="1157,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="ScrapingFollowing.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <InArgument x:TypeArguments="sd:DataTable" x:Key="FollowersDataTable">
-          <mva:VisualBasicValue x:TypeArguments="sd:DataTable" ExpressionText="FollowersDataTable" />
-        </InArgument>
+        <InArgument x:TypeArguments="sd:DataTable" x:Key="FollowersDataTable">[FollowersDataTable]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
   </Sequence>
