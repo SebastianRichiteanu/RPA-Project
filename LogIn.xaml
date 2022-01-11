@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1190,1510</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1182,1510</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>LogIn_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="32">
@@ -97,11 +97,7 @@
               <Variable x:TypeArguments="x:String" Default="Sheet1" Name="login_excel_sheet" />
               <Variable x:TypeArguments="x:String" Default="A2" Name="login_excel_username" />
               <Variable x:TypeArguments="sd:DataTable" Name="login_credentials" />
-              <Variable x:TypeArguments="x:Int32" Name="row_value">
-                <Variable.Default>
-                  <Literal x:TypeArguments="x:Int32" Value="1" />
-                </Variable.Default>
-              </Variable>
+              <Variable x:TypeArguments="x:Int32" Default="1" Name="row_value" />
               <Variable x:TypeArguments="x:String" Default="Username" Name="username_column_name" />
               <Variable x:TypeArguments="x:String" Default="B2" Name="login_excel_password" />
               <Variable x:TypeArguments="x:String" Name="login_password" />
