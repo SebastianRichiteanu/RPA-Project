@@ -7594,15 +7594,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Mihai\\.nuget\\packages\\": {}
+    "C:\\Users\\Zeeba\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "RPA-Project",
       "projectName": "RPA-Project",
-      "projectPath": "C:\\Users\\Mihai\\Documents\\GitHub\\RPA-Project\\.local",
-      "packagesPath": "C:\\Users\\Mihai\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mihai\\Documents\\GitHub\\RPA-Project\\.local"
+      "projectPath": "D:\\Uni\\AN_3\\SEM_1\\RPA\\RPA-Project\\RPA-Project\\.local",
+      "packagesPath": "C:\\Users\\Zeeba\\.nuget\\packages\\",
+      "outputPath": "D:\\Uni\\AN_3\\SEM_1\\RPA\\RPA-Project\\RPA-Project\\.local"
     },
     "frameworks": {
       "net461": {
@@ -7633,7 +7633,7 @@
             "version": "[21.10.4, 21.10.4]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\Mihai\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\Zeeba\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
       }
     },
     "runtimes": {
